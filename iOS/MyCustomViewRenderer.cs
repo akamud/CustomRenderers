@@ -23,8 +23,21 @@ namespace CustomRenderers.iOS
             {
                 SetNativeControl(new UILabel()
                 {
-                    Text = "Oi iOS"
+                    Text = "Oi iOS",
                 });
+            }
+
+            if (e.NewElement != null)
+            {
+                UpdateColor();
+            }
+        }
+
+        void UpdateColor()
+        {
+            if (Element != null)
+            {
+                Control.TextColor = Element.TextColor.ToUIColor();
             }
         }
     }

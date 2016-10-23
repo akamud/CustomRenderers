@@ -25,6 +25,29 @@ namespace CustomRenderers.Droid
                     Text = "Oi Android"
                 });
             }
+
+            if (e.NewElement != null)
+            {
+                UpdateColor();
+            }
+        }
+
+        protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == MyCustomView.TextColorProperty.PropertyName)
+            {
+                UpdateColor();
+            }
+        }
+
+        void UpdateColor()
+        {
+            if (Element != null)
+            {
+                Control.SetTextColor(Element.TextColor.ToAndroid());
+            }
         }
     }
 }
