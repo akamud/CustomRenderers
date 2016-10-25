@@ -8,12 +8,12 @@ namespace CustomRenderers
         {
             InitializeComponent();
 
-            var i = 0;
-            customButton.Clicked += (sender, e) =>
-            {
-                i++;
-                label.TextColor = MyCustomView.XamarinSummitColors[i % 2];
-            };
+            //var i = 0;
+            //customButton.Clicked += (sender, e) =>
+            //{
+            //    i++;
+            //    label.TextColor = MyCustomView.XamarinSummitColors[i % 2];
+            //};
         }
     }
 }

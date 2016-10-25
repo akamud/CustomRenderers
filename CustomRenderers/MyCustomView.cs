@@ -11,24 +11,6 @@ namespace CustomRenderers
             Color.FromHex("#342389")
         };
 
-        public static readonly BindableProperty TextColorProperty = BindableProperty.Create(
-            nameof(TextColor),
-            typeof(Color),
-            typeof(MyCustomView),
-            Color.Black);
-
-        public Color TextColor
-        {
-            get
-            {
-                return (Color)GetValue(TextColorProperty);
-            }
-            set
-            {
-                SetValue(TextColorProperty, value);
-            }
-        }
-
         public MyCustomView()
         {
         }

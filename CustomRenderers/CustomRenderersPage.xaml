@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CustomRenderers" x:Class="CustomRenderers.CustomRenderersPage">
 	<StackLayout Margin="20" VerticalOptions="Center">
-		<local:MyCustomView HorizontalOptions="Center" TextColor="#EB1E53" x:Name="label"/>
-		<local:MyCustomButton HorizontalOptions="Center" x:Name="customButton"/>
+		<!--<local:MyCustomView HorizontalOptions="Center" x:Name="label"/>-->
+		<!--<local:MyCustomButton HorizontalOptions="Center" x:Name="customButton"/>-->
 	</StackLayout>
 </ContentPage>
